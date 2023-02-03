@@ -1,0 +1,86 @@
+.table > table, th, td {
+    
+   
+
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+
+  }
+ th{
+    
+    padding: 20px;
+    background-color: rgb(250, 196, 95);
+    border-bottom: black 1px solid;
+  
+  }
+  #tdk{
+    padding: 20px;
+  }
+  #tdes{
+    padding: 20px;
+
+  }
+  #tdtr{
+    padding: 20px;
+  }
+
+  .isaretli{
+    background-color: rgb(146, 255, 246);
+  }
+  .ogrenildi{
+    background-color: rgb(164, 255, 146);
+  }
+
+  .isogli{
+    background-color: lawngreen;
+  }
+
+  .normal{
+    background-color: rgb(255, 230, 146);
+  }
+
+
+
+
+  .table{
+    width: 99%;
+    margin: 20px auto;
+  }
+
+
+
+
+
+
+  #buttons{
+    width: 195px;
+
+
+    
+  }
+  .sil, .isaretle, .duzenle{
+    padding: 5px;
+    margin: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    
+  }
+  .sil{
+    background-color: red;
+  }
+  .isaretle
+  {
+    background-color: blue;
+  }
+  .duzenle
+  {
+    background-color: blueviolet;
+  }
+  .sil:hover, .isaretle:hover, .duzenle:hover{
+    background-color: rgb(4, 70, 12);
+  }
+

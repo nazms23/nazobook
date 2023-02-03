@@ -1,0 +1,37 @@
+php_value display_errors Off
+php_value mbstring.http_input auto
+php_value date.timezone Europe/Istanbul
+RewriteEngine on
+directory (or nazobook.social/htdocs/ directory)
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+RewriteRule anasayfa$ index.php
+RewriteRule gonderilerim$ gonderilerim.php
+RewriteRule gonderiler-([0-9a-zA-Z-_]+)$ gonderilerim.php?p=$1
+RewriteRule kurallar$ kullaniciKural.php 
+RewriteRule duyurular$ duyurular.php 
+RewriteRule profil$ profil.php 
+RewriteRule profil-sifre$ profil.php?p=sifre 
+RewriteRule profil-sifre2$ profil.php?p=sifre2
+RewriteRule profil-eposta$ profil.php?p=eposta 
+RewriteRule profil-eposta2$ profil.php?p=eposta2
+RewriteRule profil-kullanici-adi$ profil.php?p=kadi 
+RewriteRule profil-kullanici-adi2$ profil.php?p=kadi2 
+RewriteRule giris-yap$ girisyap.php 
+RewriteRule kayit-ol$ girisyap.php?q=kayit 
+RewriteRule giris-yap-hata$ girisyap.php?p=hatali 
+RewriteRule giris-yap-basarili$ girisyap.php?p=kayitbasari 
+RewriteRule kayit-ol-eposta$ girisyap.php?q=kayit&p=eposta 
+RewriteRule kayit-ol-kullanici-adi$ girisyap.php?q=kayit&p=kadi 
+RewriteRule kayit-ol-kullanici-adi-e-posta$ girisyap.php?q=kayit&p=kadieposta 
+RewriteRule kayit-ol-sifre$ girisyap.php?q=kayit&p=sifre 
+RewriteRule sohbet$ sohbet.php
+RewriteRule sohbet-bos$ sohbet.php?p=bosbirakma
+RewriteRule kelimeler$ kelime.php
+RewriteRule kelimeler-son$ kelime.php?q=3
+RewriteRule kelimeler-rastgele-5$ kelime.php?q=1
+RewriteRule kelimeler-rastgele-10$ kelime.php?q=2
+RewriteRule kelimeler-isaret$ kelime.php?q=5
+RewriteRule kelimeler-ogrenilen$ kelime.php?q=4
+RewriteRule kelimeler-ikisi$ kelime.php?q=6
+RewriteRule kelime-ekle$ kelimeekle.php

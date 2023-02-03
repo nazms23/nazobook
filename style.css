@@ -1,0 +1,245 @@
+body{
+    background-color: rgb(70, 70, 70);
+}
+header{
+    border-style: solid;
+    width: 1300px;
+    height: 75px;
+    margin: auto;
+    border-color: rgb(59, 59, 59);
+}
+
+#headimg{
+    width: 100px;
+    position: relative;
+    top: -12px;
+    left: 45%;
+}
+
+nav{
+    border-style: solid;
+    width: 1300px;
+    height: 45px;
+    margin: auto;
+    border-color: rgb(59, 59, 59);
+    margin-top: 1px;
+}
+.navtabtd{
+    background-color: rgb(49, 49, 49);
+    width: 100px;
+    height: 39px;
+    text-align: center;
+    border-radius: 50px;
+}
+.navtabtd2{
+    background-color: rgb(49, 49, 49);
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+}
+.navtabtd3{
+    background-color: rgb(49, 49, 49);
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+}
+#navtable{
+    margin: auto;
+    float: left;
+}
+#navtablefot{
+    margin: auto;
+    position: relative;
+    top: 7px;
+}
+#navtable2{
+    margin: auto;
+    float: right;
+    margin-top: 5px;
+}
+.navtaba{
+    text-decoration: none;
+    color: aqua;
+    font-size: 17px;
+}
+.navtaba:hover{
+    text-decoration: none;
+    color: rgb(0, 172, 172);
+    font-size: 20px;
+}
+.navtaba:active{
+    text-decoration: none;
+    color: rgb(1, 68, 68);
+    font-size: 17px;
+}
+.navtaba:visited{
+    text-decoration: none;
+    color: aqua;
+    font-size: 17px;
+}
+#kullanici{
+    width: 400px;
+    height: 40px;
+    float: right;
+}
+#kullaniciresim{
+    width: 25px;
+    position: relative;
+    top: 3px;
+    border-radius: 3px;
+}
+
+article{
+    border-style: solid;
+    margin: auto;
+    width: 1300px;
+    min-height: 1000px;
+    border-color: rgb(59, 59, 59);
+    margin-top: 1px;
+
+}
+
+#bolumismi{
+    margin-left: 10px;
+    font-size: 40px;
+    color: aquamarine;
+}
+
+#gonderimesaj{
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+}
+.gonderidiv{
+    border-style: solid;
+    width: 1000px;
+    min-height: 100px;
+    margin: auto;
+    border-color: rgb(59, 59, 59);
+}
+#gonderidivduy{
+    border-style: solid;
+    width: 1000px;
+    min-height: 100px;
+    margin: auto;
+    border-color: rgb(59, 59, 59);
+    background-color: rgba(184, 113, 127, 0.568);
+}
+
+#gonderitable{
+    width: 990px;
+    margin-left: 3px;
+}
+#gonderisil{
+    text-decoration: none;
+    color: rgb(163, 16, 16);
+    background-color: rgb(233, 97, 97);
+    border-radius: 3px;
+}
+
+footer{
+    border-style: solid;
+    border-color: rgb(59, 59, 59);
+    width: 1300px;
+    height: 60px;
+    margin: auto;
+    margin-top: 1px;
+}
+
+#girisyapdiv{
+    width: 500px;
+    min-height: 520px;
+    margin: auto;
+    border-style: solid;
+    background-color: antiquewhite;
+}
+.girisyaptd{
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.girisyapinput{
+    width: 200px;
+    height: 25px;
+    background-color: aqua;
+    border-style: none;
+}
+.girisyapinput::first-line{
+    border-style: none;
+}
+
+#girisyapbuton{
+    background-color: aqua;
+    border-style: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    float: right;
+}
+
+#girisyapform{
+    margin-top: 10px;
+}
+
+
+#profilresmi{
+    margin-left: 10px;
+    width: 302px;
+    float: left;
+}
+#profilresmiresim{
+    border-radius: 10px;
+}
+
+#profilbilgiler{
+    width: 800px;
+    float: right;
+    margin-right: 130px;
+    min-height: 400px;
+}
+
+.profiltabletd{
+    min-width: 100px;
+    height: 50px;
+    color: yellow;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+#mesajid{
+    overflow-wrap: break-word;
+}
+
+
+#reklamarea1{
+    width: 300px;
+    height: 900px;
+    float: left;
+    margin-top: 30px;
+    position: fixed;
+}
+
+#reklamarea2{
+    width: 300px;
+    height: 900px;
+    margin-top: 30px;
+    position: fixed;
+    left: 1800px;
+    float: right;
+}
+
+.gondeributonu{
+    text-decoration: none;
+
+}
+
+
+
+

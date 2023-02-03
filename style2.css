@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 70, 70);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.kutu{
+    background-color: aliceblue;
+    border: solid 0px;
+   
+}
+#flex{
+    display: flex;
+    flex-direction:column;
+    
+}
+#bot{
+
+
+    width: 100%;
+    min-height: 1000px;
+
+}
+.cevapsec{
+    background-color: azure;
+    border-radius: 10px;
+    color: black;
+    width: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 50px; 
+    height: 200px;
+    
+}
+
+#flexcevap{
+   
+    
+    display: flex;
+    flex-direction:row;
+    
+
+}
+.h1ler{
+    color: azure;
+    text-align: center;
+    margin-bottom: 150px;
+    border-radius: 0px 0px 10px 0px;
+    width: 100px;
+
+}
+.cevap{
+    background-color: azure;
+    border: solid 0px;
+    word-break: break-word;
+    display: inline-block;
+    margin: 10px;
+    text-indent: 10px;
+}
+#messagesec{
+    border-style: solid;
+    width: 600px; 
+    
+    margin: 50px;
+    height: 200px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    
+    margin: 100px auto;
+    width: 1004px; 
+    height: 400px;
+   
+
+}
+
+textarea{
+    
+    border-radius: 10px;
+    background-color: azure;
+    resize: none;
+
+
+    
+}
+textarea::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color: red;
+
+    text-indent: 10px;
+}
+.button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: midnightblue;
+    color: azure;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    
+    
+}
+
+.button:hover{
+    font-size: x-large;
+    
+    
+}
+#mesaj{
+    font-weight: bold;
+    text-indent: 10px;
+    padding-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+#header{
+  
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+#h1he {
+    user-select: none;
+      
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-style: italic;
+    
+    width: 100%;
+    
+    margin: 0 auto;
+    text-align: center;
+    
+    color:#313131;
+    font-size:45px;
+    font-weight: bold;
+    position: relative;
+    animation:colorchange 20s infinite alternate;
+    
+    
+  }
+
+#sensizolmuyor a{
+    text-decoration: none;
+    text-align: center;
+   
+    background-color: midnightblue;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+
+    color: azure;
+    
+
+}
+#sensizolmuyor:hover{
+    font-size: large;
+    
+    
+}
+#sensizolmuyor{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding-top: 5px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: midnightblue;
+}
+@-webkit-keyframes colorchange {
+    0% {
+      
+      color: blue;
+    }
+    
+    10% {
+      
+      color: #8e44ad;
+    }
+    
+    20% {
+      
+      color: #1abc9c;
+    }
+    
+    30% {
+      
+      color: #d35400;
+    }
+    
+    40% {
+      
+      color: blue;
+    }
+    
+    50% {
+      
+      color: #34495e;
+    }
+    
+    60% {
+      
+      color: blue;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }
