@@ -1,7 +1,7 @@
 <?php
 	
 	$host 		= "localhost";
-	$dbname 	= "mangasitedeneme";
+	$dbname 	= "nazobook";
 	$charset 	= "utf8";
 	$root 		= "root";
 	$password 	= "";

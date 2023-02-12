@@ -42,18 +42,6 @@ $_data = $data -> fetch(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div id="reklamarea1">
-
-
-</div>
-
-<div id="reklamarea2">
-
-
-</div>
-
-
 <?php include 'header.php' ?>
     <article>
         <hr>
@@ -148,11 +136,11 @@ $_data = $data -> fetch(PDO::FETCH_ASSOC);
             if($row["gonderi_duyuru"] == 1)
             {
                 echo '<div id="gonderidivduy" style="border-style: solid;
-    width: 1000px;
-    min-height: 100px;
-    margin: auto;
-    border-color: rgb(59, 59, 59);
-    background-color: rgba(184, 113, 127, 0.568);">';
+                width: 1000px;
+                min-height: 100px;
+                margin: auto;
+                border-color: rgb(59, 59, 59);
+                background-color: rgba(184, 113, 127, 0.568);">';
             }else
             {
                 echo '<div class="gonderidiv">';
@@ -220,6 +208,23 @@ $_data = $data -> fetch(PDO::FETCH_ASSOC);
                     <td><img src="kpostfoto/'.$row["gonderi_kadi"].'/'.$row["gonderi_no"].'/gonderiresim.png" alt="" width="700px"></td>
                     </tr>';
                     }
+                }
+                $begenisor = $db->prepare('SELECT * FROM begeniler WHERE begeni_uyeid = ? && begeni_gonderiid = ?');
+                    $begenisor->execute([
+                    $_data["uye_id"], $row["gonderi_id"]
+                    ]);
+
+                    $say = $begenisor->rowCount();
+                if($say == 1)
+                {
+                    echo '<tr>
+                        <td><span style="color:white; width:20px; font-size:25px;">'.$row["gonderi_begeni"].'</span> <img src="siteresimleri/kalp.png" width=30px> <a href="gonderibegen.php?gonderiid='.$row["gonderi_id"].'&kullid='.$_data["uye_id"].'&begeni=1" id="gonderibegeli">BEĞENMEYİ KALDIR</a></td>
+                    </tr>';
+                }else
+                {
+                    echo '<tr>
+                        <td><span style="color:white; width:20px; font-size:25px;">'.$row["gonderi_begeni"].'</span> <img src="siteresimleri/kalp.png" width=30px> <a href="gonderibegen.php?gonderiid='.$row["gonderi_id"].'&kullid='.$_data["uye_id"].'&begeni=0" id="gonderibegen">BEĞEN</a></td>
+                    </tr>';
                 }
                 
                 if(@$_SESSION["kgiris"])
